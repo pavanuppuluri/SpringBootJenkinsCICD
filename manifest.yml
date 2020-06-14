@@ -3,7 +3,11 @@ applications:
   disk_quota: 512M
   instances: 1
   memory: 1G
-  path: target/SpringBootJenkinsCICD-1.0.jar
+  path: target/SpringBootJenkinsCICD-1.0-SNAPSHOT.jar
   routes:
   - route: spring-boot-jenkins-ci-cd-pavanuppuluri.cfapps.io
   stack: cflinuxfs3
+
+
+
+
