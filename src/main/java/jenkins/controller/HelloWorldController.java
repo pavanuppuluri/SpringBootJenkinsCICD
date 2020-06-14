@@ -8,7 +8,7 @@ public class HelloWorldController {
 
     @GetMapping(path = "/hello-world")
     public String helloWorld() {
-        return "Lasya Karthik Sruthi Chanti Jenkins CICD Successful!!!";
+        return "Lasya Karthik Sruthi Chanti Jenkins - mvn clean package CICD Successful!!!";
     }
 
 }
