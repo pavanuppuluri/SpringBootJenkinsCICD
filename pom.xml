@@ -45,9 +45,13 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
                 <configuration>
-                    <!-- this will get rid of version info from war file name -->
-                    <finalName>SaiRamDeploy</finalName>
+                    <file>SpringBootJenkinsCICD-1.0-SNAPSHOT.jar</file>
+                    <uniqueVersion>false</uniqueVersion>
                 </configuration>
             </plugin>
         </plugins>
