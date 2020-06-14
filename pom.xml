@@ -40,7 +40,7 @@
     </dependencies>
 
     <build>
-        <finalName>hello-world-rest-api</finalName>
+        <finalName>SpringBootJenkinsCICD</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -51,22 +51,17 @@
 
     <repositories>
         <repository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+            <id>myMavenRepo.read</id>
+            <url>https://mymavenrepo.com/repo/7kS5Mu7xmdxTxR4pG6Z3/</url>
         </repository>
     </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>myMavenRepo.write</id>
+            <url>https://mymavenrepo.com/repo/0om9eVl1ZSdrb2DWIsDL/</url>
+        </repository>
+    </distributionManagement>
 
     <pluginRepositories>
         <pluginRepository>
