@@ -6,8 +6,6 @@ applications:
   path: target/SpringBootJenkinsCICD-1.0-SNAPSHOT.jar
   routes:
   - route: spring-boot-jenkins-ci-cd-pavanuppuluri.cfapps.io
+  buildpacks:
+  - https://github.com/cloudfoundry/java-buildpack.git
   stack: cflinuxfs3
-
-
-
-
