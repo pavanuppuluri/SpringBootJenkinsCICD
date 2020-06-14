@@ -1,0 +1,9 @@
+applications:
+- name: spring-boot-jenkins-ci-cd
+  disk_quota: 512M
+  instances: 1
+  memory: 1G
+  path: target/hello-world-rest-api.jar
+  routes:
+  - route: spring-boot-jenkins-ci-cd-pavanuppuluri.cfapps.io
+  stack: cflinuxfs3
